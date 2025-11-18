@@ -1,100 +1,176 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: #3C3C3C;
 }
 
 .layout {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  gap: 15px;
+  padding: 10px 30px;
 }
 
 .left-box {
-    width: 15%;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-right: 1px solid #ccc;
-    padding-left: 50px;
-}
-
-.middle-box {
-    width: 50%;
-    background-color: #fff;
-    padding: 20px;
-    border-right: 1px solid #ccc;
-}
-
-.right-box {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 20px;
+  background-color:black;
+  padding: 20px;
+  border-radius: 15px;
+  border: 0.5px solid grey;
+  position: sticky;
+  top: 0;  
+  height: 100vh;   
+  overflow-y: auto;
 }
 
 .left-box ul li {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    line-height: 300%;
+  margin: 12px 0;
 }
 
-.left-box>ul>li>button {
-    border: none;
+.left-box button {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
 }
 
-button{
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.left-box button:hover {
+  background-color: grey;
+  color: white;
 }
 
-#logo{
-    width: 140px;
-    height: 70px;
+#create {
+  background-color: white;
+  color: black !important;
+  text-align: center !important;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-weight: bold;
 }
 
-#create{
-    background-color:black;
-    color: #ffffff;
-    font-weight: 400;
-    border: none;
-    border-radius: 9999px;
-    padding: 10px 55px;
-    margin-top: 20px;
+#create:hover {
+  background-color: grey;
 }
 
-.topbar{
-    width: 50%;
-    height: 25px;
-    position: absolute;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    color: #5a4a7a;
-    font-size: large;
+.middle-box {
+  background-color: black;
+  padding: 20px;
+  border-radius: 15px;
+  border: 0.5px solid grey;
 }
 
-.avatar {
-    float: left;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
+.topbar {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+  font-weight: 600;
+  color: white;
 }
 
-.post-img {
-    width: 100%;
-}
-
-.caption {
-    clear: both;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.actions button{
-    margin-right: 25%;
-    border: none;
+.tweet {
+  color: white;
+  margin: 20px 0;
+  padding: 15px;
+  border: 0.5px solid grey;
+  background-color: black;
+  border-radius: 12px;
 }
 
 .profile {
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.user-info span {
+  color: white;
+  font-size: 14px;
+}
+
+.caption {
+  margin: 12px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.actions button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.actions button:hover {
+  color: #5E574D;
+  transform: scale(1.05);
+}
+
+.right-box {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  border: 0.5px solid grey;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-box p {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.right-box a {
+  display: block; 
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.right-box a:hover {
+  background-color: grey;
+  color: black;
 }
