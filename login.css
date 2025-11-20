@@ -9,7 +9,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url(./images/books\ n\ plants.jpeg);
+    background-image: url(./assets/background.jpeg);
     filter: brightness(60%);
     z-index: -1; 
 }
@@ -55,5 +55,6 @@ a{
     text-decoration: none;
     color:#5a4a7a;
     font-weight: bold;
-    text-align: cent
+    display: block;  
+    text-align: center; 
 }
