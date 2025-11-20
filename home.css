@@ -138,6 +138,7 @@ body {
 }
 
 .right-box {
+  display: block;
   color: white;
   background-color: black;
   border-radius: 15px;
@@ -431,4 +432,49 @@ body {
 
 .tab-content.active { 
   display: block; 
+}
+
+.notification-list {
+  padding-top: 15px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 0.5px solid grey;
+  color: white;
+  gap: 10px;
+}
+
+.notification:last-child {
+  border-bottom: none;
+}
+
+.notification .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.notification p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.notification strong {
+  color: #90aa86;
+}
+
+.notification .time {
+  color: grey;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.book-cover-thumb {
+    border-radius: 4px !important;
 }

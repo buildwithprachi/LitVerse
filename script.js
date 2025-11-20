@@ -6,13 +6,14 @@ function openTab(tabName) {
   document.getElementById(tabName).classList.add("active");
 }
 
-const tabs = document.querySelectorAll(".tab");
-const contents = document.querySelectorAll(".tab-content");
 
-tabs.forEach(tab => {
+const profileTabs = document.querySelectorAll(".profile-tabs .tab");
+const profileContents = document.querySelectorAll(".tab-content");
+
+profileTabs.forEach(tab => {
   tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    contents.forEach(c => c.classList.remove("active"));
+    profileTabs.forEach(t => t.classList.remove("active"));
+    profileContents.forEach(c => c.classList.remove("active"));
 
     tab.classList.add("active");
     document.getElementById(tab.dataset.tab).classList.add("active");

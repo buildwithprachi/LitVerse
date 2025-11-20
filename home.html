@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LitVerse Home</title>
   <script src="script.js" defer></script>
-  <link rel="stylesheet" href="homestyle.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
@@ -17,13 +17,13 @@
       <img src="assets/logo.svg" alt="logo" id="logo">
       <ul type="none">
         <li><button role="tab" onclick="openTab('home')">Home</button></li>
-        <li><button role="tab">Notifications</button></li>
-        <li><button role="tab">Messages</button></li>
-        <li><button role="tab">Genres</button></li>
-        <li><button role="tab">Bookmarks</button></li>
+        <li><button role="tab" onclick="openTab('notifications')">Notifications</button></li>
+        <li><button role="tab" onclick="openTab('messages')">Messages</button></li>
+        <li><button role="tab" onclick="openTab('genres')">Genres</button></li>
+        <li><button role="tab" onclick="openTab('bookmarks')">Bookmarks</button></li>
         <li><button role="tab" onclick="openTab('profile')">Profile</button></li>
-        <li><button role="tab">Settings</button></li>
-        <li><button role="tab">More</button></li>
+        <li><button role="tab" onclick="openTab('settings')">Settings</button></li>
+        <li><button role="tab" onclick="openTab('more')">More</button></li>
       </ul>
       <button type="button" id="create">Create</button>
     </div>
@@ -49,7 +49,29 @@
             highly recommend.
           </p>
 
-          <img src="./assets/The Last Queen.jpeg" alt="Post Image" class="post-img">
+          <img src="./assets/last_queen.jpeg" alt="Post Image" class="post-img">
+
+          <div class="actions">
+            <button>♥︎ 320</button>
+            <button>✍ 65</button>
+            <button>✔</button>
+          </div>
+        </div>
+
+        <div class="tweet">
+          <div class="profile">
+            <img src="./assets/lisa_pfp.jpeg" alt="Profile" class="avatar">
+            <div class="user-info">
+              <h4>⟡ Lisa ⟡</h4>
+              <span>@lisalizz</span>
+            </div>
+          </div>
+           
+          <p class="caption">
+            The Cruel Prince is not a romance it’s a girlboss coming of age story. I said what I said.
+          </p>
+
+          <img src="./assets/cruel_prince.jpeg" alt="Post Image" class="post-img">
 
           <div class="actions">
             <button>♥︎ 120</button>
@@ -270,8 +292,6 @@
       </div>
     </div>
 
-
-  </div>
   </div>
 
 </body>
