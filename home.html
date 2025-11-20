@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LitVerse Home</title>
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="homestyle.css">
 </head>
 
@@ -15,12 +16,12 @@
     <div class="left-box">
       <img src="assets/logo.svg" alt="logo" id="logo">
       <ul type="none">
-        <li><button role="tab">Home</button></li>
+        <li><button role="tab" onclick="openTab('home')">Home</button></li>
         <li><button role="tab">Notifications</button></li>
         <li><button role="tab">Messages</button></li>
         <li><button role="tab">Genres</button></li>
         <li><button role="tab">Bookmarks</button></li>
-        <li><button role="tab">Profile</button></li>
+        <li><button role="tab" onclick="openTab('profile')">Profile</button></li>
         <li><button role="tab">Settings</button></li>
         <li><button role="tab">More</button></li>
       </ul>
@@ -28,95 +29,249 @@
     </div>
 
     <div class="middle-box">
-      <div class="topbar">
-        <p>Discover what fellow book lovers are reading</p>
-      </div>
-      <div class="tweet">
-        <div class="profile">
-          <img src="./assets/Sara_pfp.jpeg" alt="Profile" class="avatar">
-          <div class="user-info">
-            <h4>Sara Sharma</h4>
-            <span>@sara_reads</span>
+      <div id="home" class="page active">
+        <div class="topbar">
+          <p>Discover what fellow book lovers are reading</p>
+        </div>
+        <div class="tweet">
+          <div class="profile">
+            <img src="./assets/Sara_pfp.jpeg" alt="Profile" class="avatar">
+            <div class="user-info">
+              <h4>Sara Sharma</h4>
+              <span>@sara_reads</span>
+            </div>
+          </div>
+           
+          <p class="caption">
+            Currently reading The Last Queen by Chita Banerjee Divakaruni. </br>
+            Did not expect it to keep my interest like this! If you enjoy Historical Fiction or Indian literature, then
+            I
+            highly recommend.
+          </p>
+
+          <img src="./assets/The Last Queen.jpeg" alt="Post Image" class="post-img">
+
+          <div class="actions">
+            <button>♥︎ 120</button>
+            <button>✍ 35</button>
+            <button>✔</button>
           </div>
         </div>
-         
-        <p class="caption">
-          Currently reading The Last Queen by Chita Banerjee Divakaruni. </br>
-          Did not expect it to keep my interest like this! If you enjoy Historical Fiction or Indian literature, then I
-          highly recommend.
-        </p>
 
-        <img src="./assets/The Last Queen.jpeg" alt="Post Image" class="post-img">
+        <div class="tweet">
+          <div class="profile">
+            <img src="./assets/Mihir_pfp.jpeg" alt="Profile" class="avatar">
+            <div class="user-info">
+              <h4>Mihir</h4>
+              <span>@bookaholic</span>
+            </div>
+          </div>
+           
+          <p class="caption">
+            🪐 ⟡ 4.5 stars ︵ ݁ ₊ </br>
+            ⊹ women, they have minds, and they have souls, as well as just hearts. and they’ve got ambition, and they’ve
+            got talent, as well as just beauty. i'm so sick of people saying that love is all a woman is fit for.⊹ </br>
+          </p>
 
-        <div class="actions">
-          <button>♥︎ 120</button>
-          <button>✍ 35</button>
-          <button>✔</button>
-        </div>
-      </div>
+          <img src="./assets/Little Women Book.jpeg" alt="Post Image" class="post-img">
 
-      <div class="tweet">
-        <div class="profile">
-          <img src="./assets/Mihir_pfp.jpeg" alt="Profile" class="avatar">
-          <div class="user-info">
-            <h4>Mihir</h4>
-            <span>@bookaholic</span>
+          <div class="actions">
+            <button>♥︎ 540</button>
+            <button>✍ 60</button>
+            <button>✔</button>
           </div>
         </div>
-         
-        <p class="caption">
-          🪐 ⟡ 4.5 stars ︵ ݁ ₊ </br>
-          ⊹ women, they have minds, and they have souls, as well as just hearts. and they’ve got ambition, and they’ve
-          got talent, as well as just beauty. i'm so sick of people saying that love is all a woman is fit for.⊹ </br>
-        </p>
 
-        <img src="./assets/Little Women Book.jpeg" alt="Post Image" class="post-img">
+        <div class="tweet">
+          <div class="profile">
+            <img src="./assets/Gracy_pfp.jpeg" alt="Profile" class="avatar">
+            <div class="user-info">
+              <h4>Gracy Brown</h4>
+              <span>thatsgracyy</span>
+            </div>
+          </div>
+           
+          <p class="caption">
+            Currently reading in my favorite cozy corner ☕📖<br>
+            There's something magical about getting lost in a good book on a rainy afternoon.
+          </p>
 
-        <div class="actions">
-          <button>♥︎ 540</button>
-          <button>✍ 60</button>
-          <button>✔</button>
-        </div>
-      </div>
+          <img src="./assets/Post_picture.jpeg" alt="Post Image" class="post-img">
 
-      <div class="tweet">
-        <div class="profile">
-          <img src="./assets/Gracy_pfp.jpeg" alt="Profile" class="avatar">
-          <div class="user-info">
-            <h4>Gracy Brown</h4>
-            <span>thatsgracyy</span>
+          <div class="actions">
+            <button>♥︎ 94</button>
+            <button>✍ 8</button>
+            <button>✔</button>
           </div>
         </div>
-         
-        <p class="caption">
-          Currently reading in my favorite cozy corner ☕📖<br>
-          There's something magical about getting lost in a good book on a rainy afternoon.
-        </p>
-
-        <img src="./assets/Post_picture.jpeg" alt="Post Image" class="post-img">
-
-        <div class="actions">
-          <button>♥︎ 94</button>
-          <button>✍ 8</button>
-          <button>✔</button>
-        </div>
       </div>
 
+      <div id="profile" class="page">
+        <div class="profile-header">
+          <img src="./assets/banner.jpeg" alt="Banner" class="banner">
+          <img src="./assets/pfp.jpeg" alt="Profile" id="profile_pic">
+          <div class="profile">
+            <p class="name">Maya.</p>
+            <p id="username">@mohmaya</p>
+            <p class="bio">⟡ booktrovert ⟡
+              noun /book-troh-vert/
+              1. A person who prefers the
+              company of fictional characters. 🪐
+            </p>
+          </div>
+          <div class="profile-actions">
+            <button class="follow-btn">Follow</button>
+            <button class="message-btn">Message</button>
+          </div>
+          <div class="stats-section">
+            <div class="stats">
+              <div class="stat">
+                <span class="number">1,248</span>
+                <span class="label">Followers</span>
+              </div>
+              <div class="stat">
+                <span class="number">322</span>
+                <span class="label">Following</span>
+              </div>
+              <div class="badges">
+                <span class="badge romantasy">Classics Curator 📜</span>
+                <span class="badge sci-fi">Midnight Owl 🌙</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="profile-tabs">
+            <button class="tab active" data-tab="posts">Posts</button>
+            <button class="tab" data-tab="media">Media</button>
+            <button class="tab" data-tab="bookshelf">Bookshelf</button>
+            <button class="tab" data-tab="badges">Badges</button>
+            <button class="tab" data-tab="moodboard">Moodboard</button>
+          </div>
+
+          <div id="posts" class="tab-content active">
+
+            <div class="tweet">
+              <div class="profile">
+                <img src="./assets/Sara_pfp.jpeg" alt="Profile" class="avatar">
+                <div class="user-info">
+                  <h4>Sara Sharma</h4>
+                  <span>@sara_reads</span>
+                </div>
+              </div>
+               
+              <p class="caption">
+                i so love, being surrounded by books 💫
+                #booktwt 📚
+              </p>
+
+              <img src="./assets/post.jpeg" alt="Post Image" class="post-img">
+
+              <div class="actions">
+                <button>♥︎ 240</button>
+                <button>✍ 12</button>
+                <button>✔</button>
+              </div>
+            </div>
+
+            <div class="tweet">
+              <div class="profile">
+                <img src="./assets/Sara_pfp.jpeg" alt="Profile" class="avatar">
+                <div class="user-info">
+                  <h4>Sara Sharma</h4>
+                  <span>@sara_reads</span>
+                </div>
+              </div>
+               
+              <p class="caption">
+                A 500 page book with short chapters is shorter than a 200 page book with long chapters. Don’t ask me why
+                or how, it just makes sense.
+              </p>
+
+              <div class="actions">
+                <button>♥︎ 188</button>
+                <button>✍ 22</button>
+                <button>✔</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="media" class="tab-content">
+            <img src="./assets/post.jpeg" alt="Post Image" class="media">
+            <img src="./assets/media1.jpeg" alt="Post Image" class="media">
+            <img src="./assets/media2.jpeg" alt="Post Image" class="media">
+            <img src="./assets/media3.jpeg" alt="Post Image" class="media">
+            <img src="./assets/media4.jpeg" alt="Post Image" class="media">
+            <img src="./assets/media5.jpeg" alt="Post Image" class="media">
+
+          </div>
+
+          <div id="bookshelf" class="tab-content">
+            <div class="shelf">
+              <h3 class="shelf-title">Currently Reading</h3>
+              <div class="books">
+                <div class="book-card">
+                  <img src="./assets/the_invisible_life.jpeg" alt="Book cover">
+                  <p class="book-name">The Invisible Life of Addie LaRue</p>
+                </div>
+
+                <div class="book-card">
+                  <img src="./assets/six_of_crows.jpeg" alt="Book cover">
+                  <p class="book-name">Six of Crows</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shelf">
+              <h3 class="shelf-title">Favorites</h3>
+              <div class="books">
+                <div class="book-card">
+                  <img src="./assets/Little Women Book.jpeg" alt="Book cover">
+                  <p class="book-name">Little Women</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shelf">
+              <h3 class="shelf-title">Want to Read</h3>
+              <div class="books">
+                <div class="book-card">
+                  <img src="./assets/fourth_wing.jpeg" alt="Book cover">
+                  <p class="book-name">Fourth Wing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="badges" class="tab-content">
+            <p>Badges tab will be active soon ☊</p>
+          </div>
+
+          <div id="moodboard" class="tab-content">
+            <p>Moodboard tab will be active soon ☽</p>
+          </div>
+
+
+
+        </div>
+
+      </div>
     </div>
 
     <div class="right-box">
-  <div class="tags">
-    <p>Tags for you</p>
-    <a href="#">#popular</a>
-    <a href="#">#fanfav</a>
-    <a href="#">#JaneAusten</a>
-    <a href="#">#LitFavs</a>
-    <a href="#">#newrelease</a>
-    <a href="#">#classics</a>
+      <div class="tags">
+        <p>Tags for you</p>
+        <a href="#">#popular</a>
+        <a href="#">#fanfav</a>
+        <a href="#">#JaneAusten</a>
+        <a href="#">#LitFavs</a>
+        <a href="#">#newrelease</a>
+        <a href="#">#classics</a>
+      </div>
+    </div>
+
+
   </div>
-</div>
-
-
   </div>
 
 </body>
