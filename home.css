@@ -42,13 +42,13 @@ body {
 }
 
 .left-box button:hover {
-  background-color: grey;
+  background-color: #789478;
   color: white;
 }
 
 #create {
-  background-color: white;
-  color: black !important;
+  background-color: #789478;
+  color: white !important;
   text-align: center !important;
   margin-top: 20px;
   border-radius: 12px;
@@ -94,6 +94,11 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
 }
 
 .user-info h4 {
@@ -104,6 +109,10 @@ body {
 .user-info span {
   color: white;
   font-size: 14px;
+}
+
+.user-info span:hover {
+  cursor: pointer;
 }
 
 .caption {
@@ -133,7 +142,7 @@ body {
 }
 
 .actions button:hover {
-  color: #5E574D;
+  color: #789478;
   transform: scale(1.05);
 }
 
@@ -163,7 +172,7 @@ body {
 
 .right-box a {
   display: block; 
-  padding: 10px 16px;
+  padding: 15px 16px;
   font-size: 16px;
   text-align: left;
   cursor: pointer;
@@ -174,8 +183,8 @@ body {
 }
 
 .right-box a:hover {
-  background-color: grey;
-  color: black;
+  background-color: #789478;
+  color: white;
 }
 
 .page {
@@ -213,7 +222,7 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 4px solid #789478;
 }
 
 .name {
@@ -258,13 +267,13 @@ body {
 }
 
 .follow-btn {
-  background-color: white;
-  color: black;
+  background-color: #789478;
+  color: white;
 }
 
 .message-btn {
-  background-color: white;
-  color: black;
+  background-color: #789478;
+  color: white;
 }
 
 .profile-actions button:hover {
@@ -434,47 +443,31 @@ body {
   display: block; 
 }
 
-.notification-list {
-  padding-top: 15px;
+#notifications {
+  padding: 15px;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .notification {
-  display: flex;
-  align-items: center;
-  padding: 15px 10px;
-  border-bottom: 0.5px solid grey;
-  color: white;
-  gap: 10px;
-}
-
-.notification:last-child {
-  border-bottom: none;
-}
-
-.notification .avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  flex-shrink: 0;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
 }
 
 .notification p {
-  flex-grow: 1;
   margin: 0;
-  font-size: 15px;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  color: #fff;
 }
 
-.notification strong {
-  color: #90aa86;
-}
-
-.notification .time {
-  color: grey;
-  font-size: 12px;
-  flex-shrink: 0;
-}
-
-.book-cover-thumb {
-    border-radius: 4px !important;
+.notification span {
+  font-size: 0.75rem;
+  color: #b5b5b5;
 }
