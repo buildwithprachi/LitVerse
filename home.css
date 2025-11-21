@@ -14,6 +14,20 @@ body {
   align-items: start;
 }
 
+@media only screen and (max-width: 600px) {
+  .layout{
+    grid-template-columns: 1fr;
+  }
+  
+  .left-box {
+    display: none !important;
+  }
+  
+  .right-box{
+    display: none !important;
+  }
+}
+
 .left-box {
   background-color:black;
   padding: 20px;
@@ -72,7 +86,7 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid grey;
   font-weight: 600;
-  color: white;
+  color: #789478;
 }
 
 .tweet {
@@ -451,11 +465,12 @@ body {
   margin-bottom: 15px;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #789478;
 }
 
 .notification {
   background-color: #1a1a1a;
-  border: 1px solid #333;
+  border: 1px solid #789478;
   border-radius: 10px;
   padding: 12px 15px;
   margin-bottom: 12px;
@@ -464,7 +479,7 @@ body {
 .notification p {
   margin: 0;
   font-size: 0.95rem;
-  color: #fff;
+  color: white;
 }
 
 .notification span {
