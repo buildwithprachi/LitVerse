@@ -32,7 +32,7 @@ body {
   background-color:black;
   padding: 20px;
   border-radius: 15px;
-  border: 0.5px solid grey;
+  border: 0.5px solid #789478;
   position: sticky;
   top: 0;  
   height: 100vh;   
@@ -77,23 +77,25 @@ body {
   background-color: black;
   padding: 20px;
   border-radius: 15px;
-  border: 0.5px solid grey;
+  border: 0.5px solid #789478;
   overflow: visible;
 }
 
 .topbar {
   text-align: center;
+  padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid #789478;
+  border-bottom: 1px solid #789478;
   font-weight: 600;
-  color: #789478;
+  color: white;
 }
 
 .tweet {
   color: white;
   margin: 20px 0;
   padding: 15px;
-  border: 0.5px solid grey;
+  border: 0.5px solid #789478;
   background-color: black;
   border-radius: 12px;
 }
@@ -108,6 +110,8 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  float: left;
+  margin-right: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -118,6 +122,7 @@ body {
 .user-info h4 {
   margin: 0;
   font-size: 17px;
+  margin-bottom: 3px;
 }
 
 .user-info span {
@@ -165,7 +170,7 @@ body {
   color: white;
   background-color: black;
   border-radius: 15px;
-  border: 0.5px solid grey;
+  border: 0.5px solid #789478;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -182,6 +187,8 @@ body {
   font-weight: bold;
   margin-bottom: 15px;
   font-size: 18px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #789478;
 }
 
 .right-box a {
@@ -224,6 +231,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding: 0px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
@@ -452,7 +460,6 @@ body {
   display: none; 
 }
 
-
 .tab-content.active { 
   display: block; 
 }
@@ -485,4 +492,33 @@ body {
 .notification span {
   font-size: 0.75rem;
   color: #b5b5b5;
+}
+
+.middle-box .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-box .buttons button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.middle-box .buttons button:focus {
+  outline: none;
+}
+
+.middle-box .buttons img {
+  width: 60px;
+  height: 60px;
+}
+
+.page.active .buttons {
+  border-bottom: 1px solid #789478;
+  padding-bottom: 10px;
 }
