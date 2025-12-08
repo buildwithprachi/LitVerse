@@ -39,6 +39,11 @@ body {
   overflow-y: auto;
 }
 
+#logo {
+  height: 100px;
+  width: 250px;
+}
+
 .left-box ul li {
   margin: 12px 0;
 }
@@ -93,11 +98,11 @@ body {
 
 .tweet {
   color: white;
-  margin: 20px 0;
-  padding: 15px;
-  border: 0.5px solid #789478;
+  margin: 0 0;
+  padding: 30px 0;
+  border-top: 0.5px solid #789478;
+  border-bottom: 0.5px solid #789478;
   background-color: black;
-  border-radius: 12px;
 }
 
 .profile {
@@ -335,6 +340,14 @@ body {
   color: grey;
 }
 
+#posts .user-info {
+  text-align: left;
+}
+
+#posts .caption {
+  text-align: left;
+}
+
 .badges {
   display: flex;
   flex-direction: column;
@@ -555,4 +568,59 @@ body {
   font-size: 0.9rem;
   color: #555;
   margin-top: 5px;
+}
+
+.create-post-box {
+    display: flex;
+    gap: 15px;
+    padding: 15px 20px;
+    background: black;
+    border-bottom: 0.5px solid #789478;
+}
+
+.cp-avatar img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.cp-input-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cp-input-area textarea {
+    width: 100%;
+    padding: 12px;
+    resize: none;
+    border: none;
+    border: 1px solid #789478;
+    outline: none;
+    font-size: 1rem;
+    font-family: inherit;
+    background: black;
+    border-radius: 8px;
+    color: white;
+}
+
+.cp-bottom-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.cp-post-btn {
+    background: #789478;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+
+.cp-post-btn:hover {
+    background: #90aa86;
 }
