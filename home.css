@@ -383,7 +383,7 @@ body {
   margin-top: 25px;
 }
 
-#media {
+#media.active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
@@ -395,24 +395,6 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 6px;
-}
-
-#media {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  padding: 10px 0;
-}
-
-.media {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-#bookshelf {
-  padding: 10px;
 }
 
 .shelf {
@@ -448,11 +430,12 @@ body {
   font-size: 0.85rem;
 }
 
-#bookshelf {
+#bookshelf.active{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: 10px;
   margin-top: 10px;
 }
 
