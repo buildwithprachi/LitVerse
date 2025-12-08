@@ -88,11 +88,10 @@ body {
 
 .topbar {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: 1px solid #789478;
-  border-bottom: 1px solid #789478;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-weight: 600;
+  font-size: 20px;
   color: white;
 }
 
@@ -198,7 +197,7 @@ body {
 
 .right-box a {
   display: block;
-  padding: 15px 16px;
+  padding: 15px;
   font-size: 16px;
   text-align: left;
   cursor: pointer;
@@ -443,7 +442,7 @@ body {
   font-size: 0.85rem;
 }
 
-#bookshelf.active{
+#bookshelf.active {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -464,16 +463,15 @@ body {
   padding: 15px;
 }
 
-.section-title {
+.notification-title {
   margin-bottom: 15px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #789478;
 }
 
 .notification {
   background-color: #1a1a1a;
-  border: 1px solid #789478;
   border-radius: 10px;
   padding: 12px 15px;
   margin-bottom: 12px;
@@ -524,12 +522,12 @@ body {
 }
 
 #messages {
-  padding: 20px;
+  padding: 0px;
 }
 
 .messages-title {
   margin-bottom: 20px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #789478;
 }
 
@@ -541,7 +539,6 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.2s ease;
-  border: 1px solid #789478;
   margin-bottom: 10px;
   background-color: #1a1a1a;
   border-radius: 10px;
@@ -566,61 +563,75 @@ body {
 
 .dm-info p {
   font-size: 0.9rem;
-  color: #555;
-  margin-top: 5px;
+  color: white;
+  margin-top: 10px;
 }
 
 .create-post-box {
-    display: flex;
-    gap: 15px;
-    padding: 15px 20px;
-    background: black;
-    border-bottom: 0.5px solid #789478;
+  display: flex;
+  gap: 15px;
+  padding: 15px 20px;
+  background: black;
+  border-bottom: 0.5px solid #789478;
 }
 
-.cp-avatar img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+.cp-avatar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .cp-input-area {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cp-input-area textarea {
-    width: 100%;
-    padding: 12px;
-    resize: none;
-    border: none;
-    border: 1px solid #789478;
-    outline: none;
-    font-size: 1rem;
-    font-family: inherit;
-    background: black;
-    border-radius: 8px;
-    color: white;
+  width: 100%;
+  padding: 12px;
+  resize: none;
+  border: none;
+  border: 0.5px solid #789478;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+  background: black;
+  border-radius: 8px;
+  color: white;
 }
 
 .cp-bottom-row {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
 
 .cp-post-btn {
-    background: #789478;
-    color: white;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: 0.2s ease;
+  background: #789478;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
 }
 
 .cp-post-btn:hover {
-    background: #90aa86;
+  background: #90aa86;
+}
+
+.authors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.author span {
+  text-align: center;
+}
+
+.author:hover {
+  cursor: pointer;
 }

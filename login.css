@@ -18,15 +18,21 @@
     margin: auto;
     width: 300px;
     height: 450px;
-    background-color:aliceblue;
+    background-color:#f0f8ff;
     padding: 40px 20px;
     border-radius: 10px;
+}
+
+#loginbox img {
+    height: 120px;
+    width: 300px;
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
     color: #789478;
     text-align: center;
+    line-height: 25px;
 }
 
 p{
